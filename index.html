@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Skincare</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <!-- Logo -->
+            <div class="nav-logo border">
+                <div class="logo"></div>
+            </div>
+            <!-- search bar -->
+             <div class="nav-search">
+                <input placeholder="Search for Simple Products" class="search-input">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+             </div>
+             <!-- Cart -->
+              <div class="cart border">
+                <i class="fa-solid fa-cart-plus"></i>
+              </div>
+              <!-- Login -->
+               <div class="user border">
+                <i class="fa-solid fa-user"></i>
+               </div>
+        </div>
+        <!-- Products -->
+        <div class="Section">
+            <div class="products border">
+                <select class="pro-select">
+                    <option>Products</option>
+                    <option>Face Wash</option>
+                    <option>Moisturisers</option>
+                    <option>Makeup Removers</option>
+                    <option>Sunscreen</option>
+                    <option>Booster Serums</option>
+                    <option>Gentle Exfoliators</option>
+                    <option>Masks</option>
+                </select>
+            </div>
+            <div class="skintype border">
+                <select class="skintype-select">
+                    <option>Shop by Skin Type</option>
+                    <option>Oily Skin</option>
+                    <option>Dry Skin</option>
+                    <option>Sensitive Skin</option>
+                    <option>Normal & Combination Skin</option>
+                </select>
+            </div>
+            <div class="concern border">
+                <select class="con-select">
+                    <option>Shop by Concern</option>
+                    <option>Radiant Glow</option>
+                    <option>Hydration</option>
+                    <option>Pigmentation</option>
+                    <option>Oil & Acne Control</option>
+                </select>
+            </div>
+            <div class="tips border">
+                <option class="tips-select">Skincare Tips</option>
+            </div>
+            <div class="about border">
+                <select class="about-select">
+                    <option>All About Simple</option>
+                    <option>Track my Order</option>
+                    <option>Our Journey</option>
+                    <option>Ingredient Philosophy</option>
+                </select>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="carousel-container">
+            <img src="images/img1.jpg" class="carousel-image active">
+            <img src="images/img2.jpg" class="carousel-image">
+            <img src="images/img3.jpg" class="carousel-image">
+            <img src="images/img4.jpg" class="carousel-image">
+            <img src="images/img5.jpg" class="carousel-image">
+            <img src="images/img6.jpg" class="carousel-image">
+            <img src="images/img7.jpg" class="carousel-image">
+            <img src="images/img8.jpg" class="carousel-image">
+
+            <button class="carousel-button prev" onclick="prevImage()">❮</button>
+            <button class="carousel-button next" onclick="nextImage()">❯</button>
+        </div>
+        <div class="info">
+            <h2>Our Products Are</h2>
+
+            <div class="feature">
+                <img src="images/clean.png" alt="clean"/>
+                <span>Clean</span>
+            </div>
+
+            <div class="feature">
+                <img src="images/kind.png" alt="kind"/>
+                <span>Kind</span>
+            </div>
+
+            <div class="feature">
+                <img src="images/effective.png" alt="effective"/>
+                <span>Effective</span>
+            </div>
+        </div>
+        <div class="shop-section">
+            <div class="box">
+                <div class="box-content">
+                    <div class="box-img" style="background-image: url('images/box1.jpg');"></div>
+                    <h2>Refreshing Facewash</h2>
+                    <p>100% soap-free Cleansing | For Sensitive Skin </p>
+                    <h3>375 RS</h3>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-content">
+                    <div class="box-img" style="background-image: url('images/box2.png');"></div>
+                    <h2>Hydrating Light Moisturizer</h2>
+                    <p>Lightweight Hydration | For Sensitive Skin </p>
+                    <h3>420 RS</h3>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-content">
+                    <div class="box-img" style="background-image: url('images/box3.jpg');"></div>
+                    <h2>3% Hyaluronic Acid + vitamin B5 Serum</h2>
+                    <p>Deep Hydration | For Dehydrated Skin </p>
+                    <h3>530 RS</h3>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-content">
+                    <div class="box-img" style="background-image: url('images/box4.jpg');"></div>
+                    <h2>Hydrating Gel Creme</h2>
+                    <p>100hr Hydration | From Normal to Dry Skin </p>
+                    <h3>449 RS</h3>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="info2">
+            <h2><i>Everything your Skin needs, <br> Nothing it doesn't</i></h2>
+            <span>
+                <img src="images/noperfume.gif"/>
+                <img src="images/chemfree.gif"/>
+                <img src="images/tested.gif"/>
+                <img src="images/ph.gif"/>
+            </span>
+        </div>
+        <div class="carousel2-container">
+            <img src="images/img9.jpg" class="carousel2-image active">
+            <img src="images/img10.jpg" class="carousel2-image">
+            <img src="images/img11.jpg" class="carousel2-image">
+
+            <button class="carousel2-button prev" onclick="prevImage2()">❮</button>
+            <button class="carousel2-button next" onclick="nextImage2()">❯</button>
+        </div>
+    </main>
+    <footer>
+        <div class="community">
+            <h2>Love From Our Community</h2>
+            <div class="cbox-container">
+            <div class="cbox">
+                <h3>Isha</h3>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <p>I adore Simple Skincare's refreshing facewash for its gentle formula and fragrance-free experience. 
+                    It leaves her skin feeling revitalized and rejuvenated, making it a must-have in my skincare routine.
+                </p>
+            </div>
+            <div class="cbox">
+                <h3>Nidhi Agarwal</h3>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <p>My skin hasn't felt so good in a long time. I have sensitive skin and thanks to Simple, 
+                    my skincare routine is set in place. I started using Refreshing facial foam and hyaluronic 
+                    acid booster serum. These are truly my holy grail products. 
+                    The skin-loving ingredients are a blessing!
+                </p>
+            </div>
+            <div class="cbox">
+                <h3>Latha</h3>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <p>The Waterboost Gel Creme is a game-changer for my dry skin. Since using it, 
+                    I've noticed a remarkable improvement in hydration and overall skin texture. 
+                    It's simply the best!
+                </p>
+            </div>
+            </div>   
+        </div>
+
+        <section class="subscribe-section">
+            <h2>Join our <span class="highlight">Simple Squad</span></h2>
+            <p class="description">
+                For exclusive skincare tips, early access to new launches, insider deals, beauty secrets, expert advice, and personalized recommendations.
+            </p>
+
+            <form class="subscribe-form">
+                <input type="email" placeholder="Enter Your Email Id" required>
+                <button type="submit">Subscribe</button>
+            </form>
+
+            <div class="privacy-text">
+                <input type="checkbox" id="agree">
+                <label for="agree">
+                    By continuing, I agree to receiving marketing communications (news, updates, offers) and online advertising tailored to my interests from trusted
+                    <strong>Unilever Brands</strong> via email, SMS, WhatsApp, etc.
+                    <a href="#">Privacy Notice.</a>
+                </label>
+            </div>
+
+            <p class="offer">
+                <a href="#">Subscribe for free and get 10% OFF your first order!</a>
+            </p>
+        </section>
+        <section class="footer-section">
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <img src="images/unilever-logo.png" alt="Unilever Logo">
+                    <div class="partnered">
+                        Partnered with <img src="images/bebeautiful-logo.png" alt="Be Beautiful Logo">
+                    </div>
+                </div>
+
+                <div class="footer-columns">
+                    <div class="footer-column">
+                        <h3>Shop</h3>
+                        <ul>
+                            <li><a href="#">Facial Cleansers</a></li>
+                            <li><a href="#">Moisturizers</a></li>
+                            <li><a href="#">Booster Serums</a></li>
+                            <li><a href="#">Gentle Exfoliators</a></li>
+                            <li><a href="#">Masks</a></li>
+                            <li><a href="#">Makeup Removers</a></li>
+                            <li><a href="#">All Products</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3>Learn</h3>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Privacy Notice</a></li>
+                            <li><a href="#">Accessibility</a></li>
+                            <li><a href="#">Blogs & Tips</a></li>
+                            <li><a href="#">Legal</a></li>
+                            <li><a href="#">Cookie Notice</a></li>
+                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="#">Return Policy</a></li>
+                            <li><a href="#">Sitemap</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3>Help</h3>
+                        <ul>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Terms & Condition</a></li>
+                            <li><a href="#">Shipping & Refund Policy</a></li>
+                            <li><a href="#">Track My Order</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-social">
+                        <p>Follow Us At:</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright © 2025 Simple Skincare. Made with &hearts;</p>
+        </section>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
